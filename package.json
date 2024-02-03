@@ -1,0 +1,46 @@
+{
+	"name": "mihale",
+	"version": "0.1.0",
+	"displayName": "Mihale",
+	"description": "Extremely satisfying, elegant and minimalist.",
+	"publisher": "Zeno",
+	"icon": "icon.png",
+	"preview": true,
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ngumie/mihale"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"icon",
+		"icons",
+		"mihale",
+		"catppuccin",
+		"nonicons",
+		"theme",
+		"material icon theme",
+		"symbols"
+	],
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "Mihale",
+				"label": "Mihale",
+				"path": "./plugin.jsonc"
+			}
+		]
+	},
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"scripts": {
+		"dev": "vsce package",
+		"build": "vsce publish",
+		"feat": "vsce publish minor"
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^2.23.0"
+	}
+}
